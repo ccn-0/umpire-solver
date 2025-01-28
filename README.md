@@ -1,6 +1,9 @@
 The traveling umpire problem solver
 ===================================
 
+This is a reimplementation of Locally Optimized Crossover for the Traveling Umpire Problem.
+Original paper: https://www.sciencedirect.com/science/article/abs/pii/S0377221711006813
+
 The Traveling Umpire Problem (TUP) considers the problem of assigning umpires (or referees) to a tournament of games. In a TUP instance, 2n teams are playing a double round robin tournament. Each team has a home venue, and every pair of teams plays twice in the tournament, once at each team's venue. There are 4n-2 time slots in the tournament; every team plays exactly once in each time slot. There are significant distances between home venues, defined by a symmetric distance matrix satisfying the triangle inequality.
 
 There are n umpires to handle these games. Each game needs one umpire; each umpire handles one game per time slot. There are three main conflicting goals that drive the assignment of umpires to games. First, the umpires should not travel too much. Travel for the umpires is defined to be the sum of the distances between home venues of successive handled games. Second, umpires should see all the home venues. Third, umpires should not handle the games of a team too often in short succession.
